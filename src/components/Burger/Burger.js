@@ -17,7 +17,7 @@ const burger = (props) => {
     }
 
 
-    console.log(transformedIngredients)
+    // console.log(transformedIngredients)
 
     return (
         <div className={classes.Burger}>
@@ -26,7 +26,6 @@ const burger = (props) => {
             <BurgerIngredient type="bread-bottom" />
         </div>
     )
-
 }
 
 export default burger;
