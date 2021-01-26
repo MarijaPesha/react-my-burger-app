@@ -13,6 +13,7 @@ class ContactData extends Component {
             street: "",
             postalCode: ""
         },
+        price: 0,
         loading: false
     }
 
@@ -22,7 +23,7 @@ class ContactData extends Component {
         this.setState({ loading: true });
         const order = {
             ingredients: this.props.ingredients,
-            price: this.state.price,
+            price: this.props.price,
             customer: {
                 name: "Marija Pesha",
                 address: {
